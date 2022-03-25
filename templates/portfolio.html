@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es-en">
+<head>
+	<title>RaulFix</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="RFix portfolio" content="Mi Portafolio">
+	<link rel="shortcut icon" href="img/rfix.ico">
+    
+    <!-- FONT AWESOME revisar como se hace un botón search localmente-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!--Fuente-->
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel = "stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" href = "style.css" type = "text/css">
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+
+    
+    <div class = "menu-btn">
+        <i class = "fas fa-bars"></i>
+    </div>
+
+    <!--Container-->
+    <div class="container" onclick = "closeNav()">
+        <header>
+        <nav class="nav-main">
+            <a href = "/index.html"><img src="/img/Gryphus1.jpg" alt = "LOGO" class = "nav-brand"></a>
+            <ul class = "nav-menu"  id = "opt">
+                <li>
+                    <a href = "/index.html#Servicios" onclick = "closeNav()">Servicios</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Historias" onclick = "closeNav()">Historias</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Vision" onclick = "closeNav()">Visión</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Conocimientos" onclick = "closeNav()">Conocimientos</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Contactanos" onclick = "closeNav()">Contacto</a>
+                </li>
+                <li>
+                    <a href = "portfolio.html" onclick = "closeNav()">Portfolio</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Más...</a>
+                </li>
+            </ul>
+        </nav>
+        
+        </header>
+
+    </div>
+
+    <main id="blog">
+        <center>
+            <div class="catalogo">
+
+                <div class="objeto">
+                    <img src = "/img/calculadora.webp" alt = "calc" onclick="showCalc()">
+                    <p onclick="showCalc()">Calculadora</p>
+                </div>
+
+                <div class="objeto">
+                    <a href = "working.html" onclick = "closeNav()">
+                    <img src = "/img/reversecard.jpg" alt = "memory" onclick = "showMemory()">
+                    <p onclick="showMemory()">Memory</p>
+                    </a>
+                </div>
+
+            </div>
+        </center>
+
+        <div id = "calculadora">
+            <div class = "calc">
+                <table class="calc">
+                    <tr>
+                        <td colspan="4" id = "fool"><span id="operando" class = "screen"></span><span id = "resultado" class = "screen"></span></td>
+                    </tr>
+                    <tr>
+                        <th class = "btn" id = "reset">C</th>
+                        <th><img src = "/img/Gryphus1.jpg" alt = "LOGO" id = "wtrmark"></th>
+                        <th class = "btn" id = "on" onclick = "init()">On</th>
+                        <th class = "btn" id = "off" onclick="hideCalc()">Off</th>
+                    </tr>
+                    <tr>
+                        <th class = "btn" id = "siete">7</th>
+                        <th class = "btn" id = "ocho">8</th>
+                        <th class = "btn" id = "nueve">9</th>
+                        <th class = "btn" id = "dividir">/</th>
+                    </tr>
+                    <tr>
+                        <th class = "btn" id = "cuatro">4</th>
+                        <th class = "btn" id = "cinco">5</th>
+                        <th class = "btn" id = "seis">6</th>
+                        <th class = "btn" id = "multiplicar">*</th>
+                    </tr>
+                    <tr>
+                        <th class = "btn" id = "uno">1</th>
+                        <th class = "btn" id = "dos">2</th>
+                        <th class = "btn" id = "tres">3</th>
+                        <th class = "btn" id = "resta">-</th>
+                    </tr>
+                    <tr>
+                        <th class = "btn" id = "igual">=</th>
+                        <th class = "btn" id = "cero">0</th>
+                        <th class = "btn" id = "punto">.</th>
+                        <th class = "btn" id = "suma">+</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id = "memory">
+            <div class="mesa" onclick="hideMemory()">
+                <table class="tablero">
+                    <tr>
+                        <th class="carta">Hola</th>
+                        <th class="carta">Hola</th>
+                        <th class="carta">Hola</th>
+                        <th class="carta">Hola</th>
+                    </tr>
+                    <tr>
+                        <th class="carta">Hola</th>
+                        <th class="carta">Hola</th>
+                        <th class="carta">Hola</th>
+                        <th class="carta">Hola</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container" onclick = "closeNav()">
+        <!--SOCIAL-->
+        <section class = "social" onclick = "closeNav()">
+            <p>Síguenos en:</p>
+            <div class = "links">
+
+                <a href = "https://www.linkedin.com/in/raulpinero/">
+                    <i class = "fab fa-linkedin"></i>
+                    <div class = "bg"></div>
+                </a>
+                
+                <a href="https://www.instagram.com/raulfix/">
+                    <i class = "fab fa-instagram"></i>
+                    <div class = "bg"></div>
+                </a>
+                
+                <a href="https://www.youtube.com/channel/UCi0I9rQ50j9iXIw5sXUrS3Q">
+                    <i class = "fab fa-youtube"></i>
+                    <div class = "bg"></div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <nav class="navbar" onclick = "closeNav()">
+            <a href = "/index.html"><img src="/img/Gryphus1.jpg" alt = "LOGO" class = "nav-brand"></a>
+            <ul class = "nav-menu">
+                <li>
+                    <a href = "/index.html#Servicios" onclick = "closeNav()">Servicios</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Historias" onclick = "closeNav()">Historias</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Vision" onclick = "closeNav()">Visión</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Conocimientos" onclick = "closeNav()">Conocimientos</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Contactanos" onclick = "closeNav()">Contacto</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Portfolio</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Más...</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </footer>
+
+    <div class="creditos">
+        <h3>Salamandra Tecnologia @Raulfix Copyright </h3>
+    </div>
+    
+    <!--Scroll Reveal-->
+    <script src = "https://unpkg.com/scrollreveal"></script>
+
+    <!--CustomJS-->
+    <script src = "main.js"></script>
+
+</body>
+</html>

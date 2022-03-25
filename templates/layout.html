@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es-en">
+<head>
+	<title>RaulFix</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mi Portafolio">
+	<link rel="shortcut icon" href="img/rfix.ico">
+    
+    <!-- FONT AWESOME revisar como se hace un botón search localmente-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!--Fuente-->
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel = "stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" href = "style.css" type = "text/css">
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+
+    
+    <div class = "menu-btn">
+        <i class = "fas fa-bars"></i>
+    </div>
+
+    <!--Container-->
+    <div class="container" onclick = "closeNav()">
+        <header>
+        <nav class="nav-main">
+            <a href = "/index.html"><img src="/img/Gryphus1.jpg" alt = "LOGO" class = "nav-brand"></a>
+            <ul class = "nav-menu"  id = "opt">
+                <li>
+                    <a href = "/index.html#Servicios" onclick = "closeNav()">Servicios</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Historias" onclick = "closeNav()">Historias</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Vision" onclick = "closeNav()">Visión</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Conocimientos" onclick = "closeNav()">Conocimientos</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Contactanos" onclick = "closeNav()">Contacto</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Portfolio</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Más...</a>
+                </li>
+            </ul>
+        </nav>
+        
+        </header>
+
+    </div>
+
+    <main id="blog" onclick = "closeNav()">
+
+    </main>
+
+    <footer class="container" onclick = "closeNav()">
+        <!--SOCIAL-->
+        <section class = "social" onclick = "closeNav()">
+            <p>Síguenos en:</p>
+            <div class = "links">
+
+                <a href = "https://www.linkedin.com/in/raulpinero/">
+                    <i class = "fab fa-linkedin"></i>
+                    <div class = "bg"></div>
+                </a>
+                
+                <a href="https://www.instagram.com/raulfix/">
+                    <i class = "fab fa-instagram"></i>
+                    <div class = "bg"></div>
+                </a>
+                
+                <a href="https://www.youtube.com/channel/UCi0I9rQ50j9iXIw5sXUrS3Q">
+                    <i class = "fab fa-youtube"></i>
+                    <div class = "bg"></div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <nav class="navbar" onclick = "closeNav()">
+            <a href = "/index.html"><img src="/img/Gryphus1.jpg" alt = "LOGO" class = "nav-brand"></a>
+            <ul class = "nav-menu">
+                <li>
+                    <a href = "/index.html#Servicios" onclick = "closeNav()">Servicios</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Historias" onclick = "closeNav()">Historias</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Vision" onclick = "closeNav()">Visión</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Conocimientos" onclick = "closeNav()">Conocimientos</a>
+                </li>
+                <li>
+                    <a href = "/index.html#Contactanos" onclick = "closeNav()">Contacto</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Portfolio</a>
+                </li>
+                <li>
+                    <a href = "working.html" onclick = "closeNav()">Más...</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </footer>
+
+    <div class="creditos">
+        <h3>Salamandra Tecnologia @Raulfix Copyright </h3>
+    </div>
+    
+    <!--Scroll Reveal-->
+    <script src = "https://unpkg.com/scrollreveal"></script>
+
+    <!--CustomJS-->
+    <script src = "templates/main.js"></script>
+
+</body>
+</html>

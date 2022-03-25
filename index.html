@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es-en">
+<head>
+	<title>RFix</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="RFix" content="Es una marca especializada en el desarrollo y diseño de sitios web para darle identidad a tu empresa">
+	<link rel="shortcut icon" href="img/rfix.ico">
+    
+    <!-- importar los íconos de las redes sociales-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" href = "templates/style.css" type = "text/css">
+    <!--SWAL-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+
+    
+    <div class = "menu-btn">
+        <i class = "fas fa-bars"></i>
+    </div>
+
+    <!--Container-->
+    <div class="container" onclick = "closeNav()">
+        <header>
+        <nav class="nav-main">
+            <img src="img/Gryphus1.jpg" alt = "LOGO" class = "nav-brand">
+            <ul class = "nav-menu"  id = "opt">
+                <li>
+                    <a href = "#Servicios" onclick = "closeNav()">Servicios</a>
+                </li>
+                <li>
+                    <a href = "#Historias" onclick = "closeNav()">Historias</a>
+                </li>
+                <li>
+                    <a href = "#Vision" onclick = "closeNav()">Visión</a>
+                </li>
+                <li>
+                    <a href = "#Conocimientos" onclick = "closeNav()">Conocimientos</a>
+                </li>
+                <li>
+                    <a href = "#Contactanos" onclick = "closeNav()">Contacto</a>
+                </li>
+                <li>
+                    <a href = "/templates/portfolio.html" onclick = "closeNav()">Portfolio</a>
+                </li>
+                <li>
+                    <a href = "/templates/working.html" onclick = "closeNav()">Más...</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <!--SHOWCASE-->
+        <header class = "showcase">
+            <div class = "flip">
+                <h2>¡Hola! soy Raúl desarrollador web y aplicaciones de escritorio</h2>
+                <div class = "card">
+                    <div class="card-face card-front"><p>Bienvenido a mi rincón personal dentro de la internet (slide cursor here)</p></div>
+                    <div class="card-face card-back" style="border-radius: 30px;">Me dedico al desarrollo frontend, backend y aplicaciones de escritorio. <br> Para ello utilizo lenguajes como Python, Flask y TKinter. HTML, CSS y Javascript según sea requerido. <br> Mi inspiración está basada en hacer realidad lo que a mi mente llega (ciertas condiciones aplican). <br>Me motiva en gran medida esa sensación de lograr un objetivo, una meta, no importa lo difícil que pueda ser, sin embargo, también hay que saber cuando retirarse para comenzar de nuevo con otro punto de vista. <br>Me dedico a la informática, la tecnología y a crear soluciones para optimizar procesos con más de 15 años de experiencia. <br>Bienvenido a mi site, disfruta tu estadía.</div>
+                </div>
+            </div>
+        </header>
+        </header>
+
+        <!--News-->
+        <div class = "new-cards">
+            
+            <div class = "box">
+                <h3 id = "Servicios">Servicios...</h3>
+                <div class = "content">
+                    <p>Nos especializamos en brindar soluciones tecnológicas de hardware y software en diversas plataformas tecnológicas ajustadas según las necesidades o requerimientos de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <div class = "box">
+                <h3 id = "Historias">Historias...</h3>
+                <a href="templates/historias.html">
+                    <div class = "content">
+                        <p>!Tengo algo que contarte! Acércate a mi blog</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class = "box">
+                <h3 id = "Vision">Visión...</h3>
+                <div class = "content">
+                    <p>Aún no sé que colocar en este espacio, parece fácil pero ¡no!.</p>
+                </div>
+            </div>
+
+            <div class = "box">
+                <h3 id = "Conocimientos">Conocimientos...</h3>
+                <div class = "content">
+                    <p>Desarrollo: <br><br>HTML, CSS, Javascript. <br><br>Pyhton, Python-Flask, MySQL. <br><br>Infraestructura: <br><br>Windows server, Linux, Cisco, Mikrotik.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Banner Two-->
+        <section class="cards-banner-two">
+            <div class="content">
+                <div class = "card">
+                    <div class="card-face card-front"><p>Portfolio...</p></div>
+                    <div class="card-face card-back" style="border-radius: 30px;"><img src="./img/working.gif" style="border-radius: 30px;" id="working">Working on... <a href = "/templates/portfolio.html">Portfolio</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contenido-->
+        <!-- <main id="blog" onclick = "closeNav()">
+            
+        </main> -->
+
+        <!--Form Contact-->
+        <div class="flex-contact" onclick = "closeNav()">
+            <h1 class = "Titulo" id = "Contactanos">Contacto</h1>
+            <form action="#" class= "formulario">
+                <div class="input"><input type = "text" placeholder = "Nombre" /></div>
+                <div class="input"><input type = "email" placeholder="Correo" /></div>
+                <div class="input"><input type = "text" placeholder="Teléfono" /></div>
+                <div class="input"><input type = "text" placeholder = "Mensaje" /></div>
+                <button class = "boton" value="submit">Enviar</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="container" onclick = "closeNav()">
+        <section class = "social" onclick = "closeNav()">
+            <p>Síguenos en:</p>
+            <div class = "links">
+
+                <a href = "https://www.linkedin.com/in/raulpinero/">
+                    <i class = "fab fa-linkedin"></i>
+                    <div class = "bg"></div>
+                </a>
+                
+                <a href="https://www.instagram.com/raulfix/">
+                    <i class = "fab fa-instagram"></i>
+                    <div class = "bg"></div>
+                </a>
+                
+                <a href="https://www.youtube.com/channel/UCi0I9rQ50j9iXIw5sXUrS3Q">
+                    <i class = "fab fa-youtube"></i>
+                    <div class = "bg"></div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <nav class="navbar" onclick = "closeNav()">
+            <img src="img/Gryphus1.jpg" alt = "LOGO" class = "nav-brand">
+            <ul class = "nav-menu">
+                <li>
+                    <a href = "#Servicios" onclick = "closeNav()">Servicios</a>
+                </li>
+                <li>
+                    <a href="templates/historias.html" onclick = "closeNav()">Historias</a>
+                </li>
+                <li>
+                    <a href = "#Vision" onclick = "closeNav()">Visión</a>
+                </li>
+                <li>
+                    <a href = "#Conocimientos" onclick = "closeNav()">Conocimientos</a>
+                </li>
+                <li>
+                    <a href = "#Contactanos" onclick = "closeNav()">Contacto</a>
+                </li>
+                <li>
+                    <a href = "/templates/portfolio.html" onclick = "closeNav()">Portfolio</a>
+                </li>
+                <li>
+                    <a href = "/templates/layout.html" onclick = "closeNav()">Más...</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </footer>
+
+    <div class="creditos">
+        <h3>@Raulfix Copyright </h3>
+    </div>
+    
+    <!--Scroll Reveal-->
+    <script src = "https://unpkg.com/scrollreveal"></script>
+
+    <!--CustomJS-->
+    <script src = "templates/main.js"></script>
+
+</body>
+</html>
