@@ -573,7 +573,8 @@ footer .navbar{
 }
 
 .carta{
-    background: url('/img/reversecard.JPG') no-repeat center center/cover;
+    /* background: url('/img/reversecard.JPG') no-repeat center center/cover; */
+    background: url('https://github.com/RPinero-20/My-First-Site/blob/main/img/reversecard.JPG') no-repeat center center/cover;
     width: 200px;
     height: 200px;
 }
