@@ -285,7 +285,8 @@ aside .indice a {
     width: 100%;
     height: 350px;
     border-radius: 10px;
-    background: url('/img/image-five.webp') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/RPinero-20/My-First-Site/main/img/image-five.webp') no-repeat center center/cover;
+    /* background: url('/img/image-five.webp') no-repeat center center/cover; */
     margin-top: 40px;
     margin-bottom: 40px;
     box-shadow: 0px 3px 5px #a8a8a8;
@@ -320,7 +321,8 @@ aside .indice a {
     width: 100%;
     height: 250px;
     border-radius: 10px;
-    background: url('/img/image-five.webp') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/RPinero-20/My-First-Site/main/img/image-five.webp') no-repeat center center/cover;
+    /* background: url('/img/image-five.webp') no-repeat center center/cover; */
     margin-top: 62px;
     margin-bottom: 40px;
     justify-content: center;
@@ -555,7 +557,8 @@ footer .navbar{
 }
 
 .mesa{
-    background: url('/img/wood.webp') no-repeat center center/cover;
+    /* background: url('/img/wood.webp') no-repeat center center/cover; */
+    background: url('https://raw.githubusercontent.com/RPinero-20/My-First-Site/main/img/wood.webp') no-repeat center center/cover;
     width: 90%;
     height: 600px;
     border: solid 1px white;
